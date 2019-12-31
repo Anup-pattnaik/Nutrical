@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+:root {
+  --primaryColor: #228b22;
+  --mainWhite: #ffffff;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.15s linear;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Lato", sans-serif;
+}
+
+/* --------------- Banner ---------------- */
+
+.hero {
+  min-height: calc(100vh - 60px);
+  background: url("./Images/Image1.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 2rem;
+}
+.banner-title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 3rem;
+}
+.Recipe {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 2rem;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.Recipe:hover {
+  background: transparent;
+  /* color: var(--primaryColor); */
+  color: black;
+}
+
+.recbtn {
+  color: white;
+  /* background-blend-mode: color; */
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+}
+
+.Recipe:hover .recbtn {
+  color: #228b22;
+}
+.inpu {
+  height: 200px;
+  width: 100%;
+}
+table {
+  /* width: 10px; */
+  font-size: 23px;
+}
+/* --------------- End of Banner ---------------- */
+
+/* navbar */
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.navbar {
+  background-color: #228b22;
+}
